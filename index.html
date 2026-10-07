@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Quatro Patas: cuidados veterinários, cadastro de pets e agendamentos."
+  >
+
+  <title>Quatro Patas — Clínica Veterinária</title>
+
+  <link rel="preconnect" href="">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">
+    Pular para o conteúdo
+  </a>
+
+  <!-- CABEÇALHO -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio" aria-label="Quatro Patas — início">
+        <span class="brand-icon" aria-hidden="true">🐾</span>
+        <span>Quatro Patas</span>
+      </a>
+
+      <div class="header-actions">
+        <button
+          id="tutorAccess"
+          class="button button-outline"
+          type="button"
+        >
+          Área do tutor
+        </button>
+
+        <a class="button header-booking" href="#agendamento">
+          Agendar consulta
+        </a>
+
+        <button
+          id="menuToggle"
+          class="icon-button"
+          type="button"
+          aria-label="Abrir navegação"
+          aria-expanded="false"
+          aria-controls="siteMenu"
+        >
+          ⋮
+        </button>
+      </div>
+
+      <!-- MENU DE TRÊS PONTINHOS -->
+      <nav
+        id="siteMenu"
+        class="site-menu"
+        aria-label="Navegação principal"
+        hidden
+      >
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#cuidados">Nossos cuidados</a>
+        <a href="#agendamento">Agendar consulta</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#duvidas">Dúvidas frequentes</a>
+        <a href="#contato">Fale conosco</a>
+
+        <button id="menuTutor" type="button">
+          Área do tutor
+        </button>
+
+        <button id="menuAdmin" type="button">
+          Área do administrador
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- INÍCIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Clínica veterinária Quatro Patas</p>
+
+          <h1>
+            Cuidado atento para quem faz parte da sua família.
+          </h1>
+
+          <p class="hero-description">
+            Consultas, vacinação, exames, cirurgias e cuidados
+            de rotina para cães, gatos e outros companheiros.
+          </p>
+
+          <div class="actions">
+            <a class="button" href="#agendamento">
+              Agendar consulta
+            </a>
+
+            <button
+              class="button button-outline"
+              type="button"
+              data-open-tutor
+            >
+              Acompanhar meu pet
+            </button>
+          </div>
+
+          <div class="hero-contact"><a class="button whatsapp-link" href="https://wa.me/5521982999609?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20cl%C3%ADnica%20Amiga%20Fiel." target="_blank" rel="noopener noreferrer">Fale conosco no WhatsApp <span aria-hidden="true">↗</span></a><p class="small">Tire suas dúvidas e conheça nossos serviços.</p></div>
+          <div class="hero-details">
+            <div>
+              <strong>Saúde</strong>
+              <span>Em todas as fases</span>
+            </div>
+
+            <div>
+              <strong>Carinho</strong>
+              <span>Em cada atendimento</span>
+            </div>
+
+            <div>
+              <strong>Histórico</strong>
+              <span>Sempre por perto</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <img
+            src="assets/consulta-cachorro.webp"
+            alt="Cachorro recebendo cuidados de uma veterinária"
+            width="1122"
+            height="1402"
+            fetchpriority="high"
+          >
+
+          <figcaption>
+            Uma amizade que merece cuidado.
+            <small>Imagem ilustrativa gerada por IA.</small>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">O que fazemos</p>
+          <h2>Cuidado completo para o seu pet</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span aria-hidden="true">🩺</span>
+            <h3>Consultas clínicas</h3>
+            <p>
+              Avaliação e acompanhamento da saúde do seu animal.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span aria-hidden="true">💉</span>
+            <h3>Vacinação</h3>
+            <p>
+              Registro das aplicações e das próximas doses
+              indicadas pela clínica.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span aria-hidden="true">🔬</span>
+            <h3>Exames</h3>
+            <p>
+              Exames laboratoriais e acompanhamento dos resultados.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span aria-hidden="true">🏥</span>
+            <h3>Cirurgias</h3>
+            <p>
+              Registro dos procedimentos e das orientações
+              de recuperação.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span aria-hidden="true">🛁</span>
+            <h3>Banho e tosa</h3>
+            <p>
+              Higiene, conforto e cuidados com a pelagem.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <span aria-hidden="true">📋</span>
+            <h3>Histórico do pet</h3>
+            <p>
+              Consulte os cuidados registrados pela clínica,
+              organizados por data.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOTOS -->
+    <section id="cuidados" class="section section-green">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Por perto em cada fase</p>
+          <h2>Um cuidado para cada companheiro</h2>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img
+              src="assets/consulta-gato.webp"
+              alt="Gato sendo examinado em uma clínica veterinária"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            >
+
+            <figcaption>
+              <h3>O tempo e o cuidado dos gatos</h3>
+              <p>Acolhimento para uma consulta mais tranquila.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img
+              src="assets/banho-tosa.webp"
+              alt="Cachorro recebendo cuidados de higiene"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            >
+
+            <figcaption>
+              <h3>Bem-estar na rotina</h3>
+              <p>Banho e tosa também fazem parte dessa história.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="image-note">
+          Imagens ilustrativas geradas por IA para o projeto acadêmico.
+        </p>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section id="agendamento" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Vamos cuidar do seu pet</p>
+          <h2>Solicitar agendamento</h2>
+
+          <p>
+            O pedido começa como pendente. A clínica pode confirmar
+            ou cancelar pela área do administrador.
+          </p>
+        </div>
+
+        <div class="booking-grid">
+          <form id="bookingForm" class="card">
+            <div class="form-grid">
+              <label>
+                Nome do tutor
+                <input
+                  name="tutorNome"
+                  type="text"
+                  minlength="2"
+                  maxlength="80"
+                  autocomplete="name"
+                  required
+                >
+              </label>
+
+              <label>
+                Telefone com DDD
+                <input
+                  name="tutorTelefone"
+                  type="tel"
+                  maxlength="15"
+                  inputmode="numeric"
+                  autocomplete="tel"
+                  placeholder="(11) 91234-5678"
+                  data-mask="phone"
+                  required
+                >
+              </label>
+            </div>
+
+            <label>
+              E-mail
+              <input
+                name="tutorEmail"
+                type="email"
+                maxlength="254"
+                autocomplete="email"
+                required
+              >
+            </label>
+
+            <div class="form-grid">
+              <label>
+                Nome do pet
+                <input
+                  name="petNome"
+                  type="text"
+                  maxlength="50"
+                  required
+                >
+              </label>
+
+              <label>
+                Espécie
+                <select name="petEspecie" required>
+                  <option value="">Selecione</option>
+                  <option>Cachorro</option><option>Gato</option><option>Outro</option>
+                </select>
+              </label>
+            </div>
+
+            <label id="otherSpeciesLabel" hidden>
+              Qual é a espécie?
+              <input name="petOutraEspecie" maxlength="50" disabled>
+            </label>
+
+            <label>
+              Serviço
+              <select name="servico" required>
+                <option value="">Selecione</option>
+                <option>Consulta clínica</option>
+                <option>Vacinação</option>
+                <option>Exames laboratoriais</option>
+                <option>Cirurgia</option>
+                <option>Banho e tosa</option>
+              </select>
+            </label>
+
+            <div class="form-grid">
+              <label>
+                Data
+                <input name="data" type="date" required>
+              </label>
+
+              <label>
+                Horário
+                <select name="horario" required>
+                  <option value="">Escolha uma data primeiro</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Observações — opcional
+              <textarea
+                name="observacoes"
+                rows="3"
+                maxlength="1000"
+                placeholder="Conte o que é importante para o atendimento."
+              ></textarea>
+            </label>
+
+            <p class="notice">
+              Cancelamento pelo cliente até
+              <strong>24 horas antes</strong> da consulta.
+              Depois desse prazo, fale com a clínica.
+              Horários de Brasília.
+            </p>
+
+            <button class="button full-width" type="submit">
+              Solicitar agendamento
+            </button>
+
+            <p
+              class="form-feedback"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <aside class="booking-sidebar">
+            <div class="card">
+              <h3>Horário de atendimento</h3>
+
+              <ul class="hours">
+                <li>
+                  <span>Segunda a sexta</span>
+                  <strong>08h às 19h</strong>
+                </li>
+
+                <li>
+                  <span>Sábado</span>
+                  <strong>08h às 13h</strong>
+                </li>
+
+                <li>
+                  <span>Domingo</span>
+                  <strong>Fechado</strong>
+                </li>
+              </ul>
+
+              <p class="small">
+                Em caso de urgência, procure atendimento veterinário
+                diretamente. Não espere a confirmação pelo site.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Suas solicitações</h3>
+              <div id="publicBookings"></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section id="equipe" class="section section-green">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Quem cuida</p>
+          <h2>Nossa equipe</h2>
+          <p>Equipe fictícia para apresentação acadêmica.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="card">
+            <div class="avatar">MA</div>
+            <h3>Dra. Marina Alves</h3>
+            <p>Clínica geral e prevenção.</p>
+          </article>
+
+          <article class="card">
+            <div class="avatar">RT</div>
+            <h3>Dr. Rafael Torres</h3>
+            <p>Cirurgias e acompanhamento.</p>
+          </article>
+
+          <article class="card">
+            <div class="avatar">BN</div>
+            <h3>Dra. Beatriz Nunes</h3>
+            <p>Cuidados com a pele e a pelagem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="duvidas" class="section faq-section" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Antes da visita</p><h2 id="faqTitle">Dúvidas frequentes</h2><p>Respostas para ajudar você a se preparar e acompanhar os cuidados do seu pet.</p></div>
+        <div class="faq-grid">
+          <article class="faq-item"><span class="faq-number">01</span><h3>O que levar na primeira consulta?</h3><p>Leve a carteira de vacinação, exames e receitas anteriores, se houver. Anote os medicamentos em uso, mudanças de comportamento e suas dúvidas para conversar com o veterinário.</p></article>
+          <article class="faq-item"><span class="faq-number">02</span><h3>Quais vacinas meu pet precisa tomar?</h3><p>O veterinário define o calendário conforme a espécie, idade, histórico e rotina do animal. Leve a carteira de vacinação para que a equipe avalie as doses e os reforços necessários.</p></article>
+          <article class="faq-item"><span class="faq-number">03</span><h3>Meu pet precisa ficar em jejum para exames?</h3><p>O preparo depende do exame e das condições do animal. Confirme as orientações com a clínica antes da visita; não adote um tempo de jejum por conta própria nem suspenda medicamentos sem orientação.</p></article>
+          <article class="faq-item"><span class="faq-number">04</span><h3>Com que frequência devo dar banho no meu pet?</h3><p>A frequência depende da espécie, pelagem, rotina e saúde da pele. Gatos costumam fazer a própria higiene. Converse com a equipe para definir os cuidados adequados ao seu animal.</p></article>
+          <article class="faq-item"><span class="faq-number">05</span><h3>Como sei se minha consulta foi confirmada?</h3><p>O pedido começa como Pendente. Consulte Meus agendamentos: a clínica altera o status para Confirmado ou Cancelado. A equipe também pode preparar uma mensagem pelo WhatsApp ou e-mail e enviá-la manualmente.</p></article>
+          <article class="faq-item"><span class="faq-number">06</span><h3>Posso cancelar meu agendamento?</h3><p>Sim. Pedidos pendentes ou confirmados podem ser cancelados pelo cliente até 24 horas antes. Depois desse prazo, entre em contato com a clínica pelo WhatsApp.</p></article>
+          <article class="faq-item"><span class="faq-number">07</span><h3>Quem pode atualizar os dados e o histórico do pet?</h3><p>Você cadastra o primeiro animal ao criar sua conta e pode adicionar outros pets. Depois, a clínica atualiza dados, fotos e registros de vacinação, consultas, cirurgias, exames e banho e tosa.</p></article>
+          <article class="faq-item"><span class="faq-number">08</span><h3>O que fazer em caso de urgência?</h3><p>Procure atendimento veterinário presencial. Não aguarde a confirmação do agendamento ou uma resposta da assistente do site, que oferece apenas ajuda de navegação.</p></article>
+        </div>
+        <div class="faq-contact"><div><h3>Ainda ficou alguma dúvida?</h3><p>Fale com a clínica para saber mais sobre os serviços e o preparo da visita.</p></div><a class="button whatsapp-link" href="https://wa.me/5521982999609?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20cl%C3%ADnica%20Amiga%20Fiel." target="_blank" rel="noopener noreferrer">Fale conosco no WhatsApp <span aria-hidden="true">↗</span></a></div>
+        <p class="faq-sources">Conteúdo educativo adaptado de <a href="https://www.vetopet.com.br/blog/primeira-consulta-do-pet-como-funciona-e-o-que-levar/" target="_blank" rel="noopener noreferrer">VetôPet</a>, <a href="https://hvsm.com.br/perguntas-frequentes/" target="_blank" rel="noopener noreferrer">Hospital Veterinário Santa Mônica</a> e <a href="https://provet.com.br/uploads/arquivos/requisicao-provet-2019-9920200702202914.pdf" target="_blank" rel="noopener noreferrer">Provet</a>. As regras de agendamento e cadastro são deste projeto. As orientações não substituem uma avaliação veterinária.</p>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Estamos por perto</p>
+          <h2>Vamos conversar sobre seu pet?</h2>
+          <a class="button whatsapp-link" href="https://wa.me/5521982999609?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20cl%C3%ADnica%20Amiga%20Fiel." target="_blank" rel="noopener noreferrer">Fale conosco no WhatsApp <span aria-hidden="true">↗</span></a>
+
+          <p>
+            Rua das Acácias, 482 — Vila das Acácias<br>
+            Rio de Janeiro — RJ
+          </p>
+
+          <p>
+            <strong>WhatsApp:</strong> (21) 98299-9609<br>
+            <strong>E-mail:</strong> contato@amigafiel.vet.br
+          </p>
+
+          <p class="small">
+            Endereço e e-mail ilustrativos. WhatsApp informado para contato.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>A história do seu pet em um só lugar</h3>
+
+          <p>
+            Crie sua conta com o primeiro animal e acompanhe
+            os registros feitos pela clínica.
+          </p>
+
+          <button class="button" type="button" data-open-tutor>
+            Acessar área do tutor
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="#inicio">🐾 Quatro Patas</a>
+
+      <p>
+        © <span id="year"></span> — Projeto acadêmico.
+      </p>
+
+      <p class="small">
+        Demonstração local. Use somente dados fictícios.
+      </p>
+
+      <button id="footerAdmin" class="footer-link" type="button">
+        Área do administrador
+      </button>
+    </div>
+  </footer>
+
+  <!-- ÁREAS DO TUTOR E ADMINISTRADOR -->
+  <dialog id="portal" class="portal" aria-labelledby="portalTitle">
+    <div class="portal-top">
+      <strong>🐾 Quatro Patas</strong>
+
+      <button
+        id="closePortal"
+        class="icon-button"
+        type="button"
+        aria-label="Fechar área e voltar ao site"
+      >
+        ×
+      </button>
+    </div>
+
+    <p class="demo-banner">
+      Demonstração: dados salvos somente neste navegador.
+      O acesso não possui proteção de servidor.
+    </p>
+
+    <div id="portalContent"></div>
+  </dialog>
+
+  <!-- ASSISTENTE EXPANSÍVEL -->
+  <aside class="assistant" aria-label="Ajuda com o site">
+    <section
+      id="assistantPanel"
+      class="assistant-panel"
+      aria-labelledby="assistantTitle"
+      hidden
+    >
+      <header>
+        <div>
+          <small>Quatro Patas</small>
+          <h2 id="assistantTitle">Como posso ajudar?</h2>
+        </div>
+
+        <button
+          id="closeAssistant"
+          class="icon-button"
+          type="button"
+          aria-label="Fechar assistente"
+        >
+          ×
+        </button>
+      </header>
+
+      <p>
+        Escolha um assunto. Esta assistente oferece ajuda
+        sobre o site, sem atendimento veterinário.
+      </p>
+
+      <div class="assistant-topics">
+        <button type="button" data-help="cadastro">
+          Criar conta e pet
+        </button>
+
+        <button type="button" data-help="agendamento">
+          Agendar consulta
+        </button>
+
+        <button type="button" data-help="cancelamento">
+          Cancelar consulta
+        </button>
+
+        <button type="button" data-help="historico">
+          Histórico e dados
+        </button>
+
+        <button type="button" data-help="mensagem">
+          WhatsApp e e-mail
+        </button>
+      </div>
+
+      <div class="assistant-contact"><a class="button whatsapp-link" href="https://wa.me/5521982999609?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20cl%C3%ADnica%20Amiga%20Fiel." target="_blank" rel="noopener noreferrer">Fale conosco no WhatsApp <span aria-hidden="true">↗</span></a></div>
+      <p id="assistantAnswer" role="status" aria-live="polite">
+        Estou aqui para ajudar você a encontrar o que precisa.
+      </p>
+    </section>
+
+    <button
+      id="assistantToggle"
+      class="assistant-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="assistantPanel"
+    >
+      ♡ Precisa de ajuda?
+    </button>
+  </aside>
+<p id="toast" class="toast" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
